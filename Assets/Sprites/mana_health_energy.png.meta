@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: mana_health_energy_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 51
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e72944e02f99d42ac1459d03d800c8
+      internalID: -182869556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_health_energy_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 51
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee87270425e45cb4da5ac28850dbfe4f
+      internalID: -1542438784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_health_energy_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 51
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d86ffe5b807a845bc031f4d87233f7
+      internalID: -1634425645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_health_energy_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 26
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf62357d933c6b418cfdaf49e98f92e
+      internalID: -852295834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_health_energy_4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 26
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d6d8fa4fb396d4ea451f7d24ea7fee
+      internalID: -1121513562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_health_energy_5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 26
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f29d3aaf771d349b5b9ebe48c77cac
+      internalID: 800229947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_health_energy_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395c60407f2cb7548814f686afe91d25
+      internalID: 1090333458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_health_energy_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e207474ba7176654d822ab977c6fd526
+      internalID: -1041926982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_health_energy_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f8d1919bcd21d4986f655b3fa1b4b8
+      internalID: -321080215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +321,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mana_health_energy_0: -182869556
+      mana_health_energy_1: -1542438784
+      mana_health_energy_2: -1634425645
+      mana_health_energy_3: -852295834
+      mana_health_energy_4: -1121513562
+      mana_health_energy_5: 800229947
+      mana_health_energy_6: 1090333458
+      mana_health_energy_7: -1041926982
+      mana_health_energy_8: -321080215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

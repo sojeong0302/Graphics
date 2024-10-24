@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
+        //1초 뒤 삭제
         Destroy(gameObject, 1f);
     }
     void Update()

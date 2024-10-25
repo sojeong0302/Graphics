@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    private float moveSpeed = 3f; // 3f는 실수값이라 뒤에 f붙임
+    private float moveSpeed = 3f;
     void Update()
     {
+        // 배경을 아래로 이동
         transform.position += Vector3.down * moveSpeed * Time.deltaTime;
 
-        //background 위로 올려줌
-        if (transform.position.y < -10) { transform.position += new Vector3(0, 20f, 0); }
+        // 배경의 Y 위치가 -10보다 작아지면
+        if (transform.position.y < -10)
+        {
+            // 배경을 Y축으로 20만큼 위로 올림
+            transform.position += new Vector3(0, 20f, 0);
+        }
     }
 }

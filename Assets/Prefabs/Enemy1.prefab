@@ -99,7 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45bcc1a9f7f6e5c4f814ff5e627f3ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coin: {fileID: 3387781996502631270, guid: 5b2af6163b878e24ca4def3dda20c97f, type: 3}
   moveSpeed: 5
+  hp: 1
 --- !u!61 &6486437202472095355
 BoxCollider2D:
   m_ObjectHideFlags: 0

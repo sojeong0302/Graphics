@@ -45,5 +45,10 @@ public class Player : MonoBehaviour
             Debug.Log("game over");
             Destroy(gameObject);
         }
+        else if (other.gameObject.tag == "Coin")
+        {
+            GameManager.instance.IncreaseCoin();
+            Destroy(other.gameObject);
+        }
     }
 }

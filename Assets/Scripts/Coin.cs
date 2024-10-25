@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    private float minY = -7f;
     void Start()
     {
         Jump();
@@ -27,6 +28,9 @@ public class Coin : MonoBehaviour
 
     void Update()
     {
-
+        if (transform.position.y < minY)
+        {
+            Destroy(gameObject);
+        }
     }
 }

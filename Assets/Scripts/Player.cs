@@ -9,7 +9,8 @@ public class Player : MonoBehaviour
     private float moveSpeed;
 
     [SerializeField]
-    private GameObject Weapon;
+    private GameObject[] weapons;
+    private int weaponIndex = 0;
 
     [SerializeField]
     private Transform shootTransform; // 플레이어 머리 위로 발사되는 위치값
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour
         //Time.time: 게임이 시작된 이후로 현재까지 흐른 시간
         if (Time.time - lastShortTime > shootInterval)
         {
-            Instantiate(Weapon, shootTransform.position, Quaternion.identity);
+            Instantiate(weapons[weaponIndex], shootTransform.position, Quaternion.identity);
             lastShortTime = Time.time;
         }
     }
@@ -49,6 +50,15 @@ public class Player : MonoBehaviour
         {
             GameManager.instance.IncreaseCoin();
             Destroy(other.gameObject);
+        }
+    }
+
+    public void Upgrade()
+    {
+        weaponIndex += 1;
+        if (weaponIndex >= weapons.Length)
+        {
+            weaponIndex = weapons.Length - 1;
         }
     }
 }

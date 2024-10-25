@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7095540474124788988}
   - component: {fileID: 796689585538987676}
   m_Layer: 0
-  m_Name: Weapon
+  m_Name: WeaponBlue
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -321080215, guid: c068b8b880a6ea04489f8b64fbb420a7, type: 3}
+  m_Sprite: {fileID: 1090333458, guid: c068b8b880a6ea04489f8b64fbb420a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3cd681b176f3e746a1a25eed514d0d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  damage: 1
+  moveSpeed: 15
+  damage: 2
 --- !u!70 &796689585538987676
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

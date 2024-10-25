@@ -8,6 +8,12 @@ public class Enemy : MonoBehaviour
     private float moveSpeed = 10f;
 
     private float minY = -7;
+
+    public void SetMoveSpeed(float moveSpeed)
+    {
+        //this는 전역으로 지정된거
+        this.moveSpeed = moveSpeed;
+    }
     void Update()
     {
         transform.position += Vector3.down * moveSpeed * Time.deltaTime;

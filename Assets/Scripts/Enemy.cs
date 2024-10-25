@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -7,7 +8,10 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 10f;
 
-    private float minY = -7;
+    private float minY = -7f;
+
+    [SerializeField]
+    private float hp = 1f;
 
     public void SetMoveSpeed(float moveSpeed)
     {
@@ -22,6 +26,26 @@ public class Enemy : MonoBehaviour
         if (transform.position.y < minY)
         {
             Destroy(gameObject);
+        }
+    }
+
+    //is trigger가 체크되어있을 경우 사용
+    //enemy의 체력 감소 코드
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Weapon")
+        {
+            Weapon weapon = other.gameObject.GetComponent<Weapon>();
+            hp -= weapon.damage;
+
+            //enemy 없어짐
+            if (hp <= 0)
+            {
+                Destroy(gameObject);
+            }
+
+            //미사일(weapon) 없애줌
+            Destroy(other.gameObject);
         }
     }
 }

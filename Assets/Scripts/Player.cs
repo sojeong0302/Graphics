@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -34,6 +35,15 @@ public class Player : MonoBehaviour
         {
             Instantiate(Weapon, shootTransform.position, Quaternion.identity);
             lastShortTime = Time.time;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("game over");
+            Destroy(gameObject);
         }
     }
 }

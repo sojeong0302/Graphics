@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Debug.Log("game over");
+            GameManager.instance.SetGameOver();
             Destroy(gameObject);
         }
         else if (other.gameObject.tag == "Coin")

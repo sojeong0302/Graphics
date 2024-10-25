@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using TMPro;
+using UnityEditor.SearchService;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI text;
+
+    [SerializeField]
+    private GameObject gameOverPanel;
     private int coin = 0;
 
 
@@ -36,5 +41,26 @@ public class GameManager : MonoBehaviour
                 player.Upgrade();
             }
         }
+    }
+
+    public void SetGameOver()
+    {
+        EnemySpawner enemySpawner = FindObjectOfType<EnemySpawner>();
+        if (enemySpawner != null)
+        {
+            enemySpawner.StopEnemyRoutine();
+        }
+        Invoke("ShowGameOverPanel", 0.5f);
+    }
+
+    void ShowGameOverPanel()
+    {
+        gameOverPanel.SetActive(true);
+    }
+
+    //게임 다시 시작
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }

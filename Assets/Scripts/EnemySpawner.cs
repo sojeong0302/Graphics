@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] enemies;
-    private float[] arrPosX = { -2.2f, -1.1f, 0f, 1.1f, 2.2f }; //무기 x좌표값
+    private float[] arrPosX = { -2.2f, -1.1f, 0f, 1.1f, 2.2f }; //쓰레기 x좌표 값
 
     [SerializeField]
     private float spawnInterval = 1.5f;
@@ -41,6 +41,7 @@ public class EnemySpawner : MonoBehaviour
             foreach (float PosX in arrPosX)
             {
                 SpawnEnemy(PosX, enemyIndex, moveSpeed);
+
             }
 
             spawmCount++;
@@ -59,6 +60,7 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy(float posX, int index, float moveSpeed)
     {
+        //쓰레기 생성 위치 설정
         Vector3 spawnPos = new Vector3(posX, transform.position.y, transform.position.z);
 
         //랜덤의 확률로 더 강한 enemy 생성
@@ -74,6 +76,8 @@ public class EnemySpawner : MonoBehaviour
         }
 
         GameObject enemyObject = Instantiate(enemies[index], spawnPos, quaternion.identity);
+
+        // 생성된 오브젝트에서 Enemy 컴포넌트를 가져와 moveSpeed 설정
         Enemy enemy = enemyObject.GetComponent<Enemy>();
         enemy.SetMoveSpeed(moveSpeed);
     }

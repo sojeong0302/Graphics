@@ -44,11 +44,14 @@ public class GameManager : MonoBehaviour
 
     public void SetGameOver()
     {
+        // 씬에서 EnemySpawner 컴포넌트를 가진 오브젝트를 찾아서 enemySpawner 변수에 저장
         EnemySpawner enemySpawner = FindObjectOfType<EnemySpawner>();
         if (enemySpawner != null)
         {
+            // enemySpawner가 존재할 경우, 적 생성 루틴을 멈추기 위해 StopEnemyRoutine() 메서드 호출
             enemySpawner.StopEnemyRoutine();
         }
+        // 0.5초 후에 ShowGameOverPanel 메서드를 호출하여 게임 오버 화면을 표시
         Invoke("ShowGameOverPanel", 0.5f);
     }
 
